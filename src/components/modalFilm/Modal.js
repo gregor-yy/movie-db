@@ -25,7 +25,6 @@ const Modal = ({ id, title, runtime, budget, revenue, backdrop_path, overview, v
         <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
             <div className='modal__content' style={{ backgroundImage: 'linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) ), url(' + (IMAGE_API + backdrop_path) + ')', backgroundSize: 'cover', backgroundPosition: 'center' }} onClick={e => e.stopPropagation()}>
                 <div className='modal__body'>
-                    {/* <img src={backdrop_path ? (IMAGE_API + backdrop_path) : IMAGE_ERROR} alt={title} /> */}
                     <div className='modal__overview'>
                         <div className='movie-title'>
                             <h2>
